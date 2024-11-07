@@ -13,10 +13,11 @@ def randomPoke(folder):
         print("No hay archivos en la carpeta especificada.")
         return
     
-    archivo_seleccionado = random.choice(archivos)    
+    archivo_seleccionado = random.choice(archivos)
+    print(archivo_seleccionado)
     ruta_archivo=os.path.join(folder, archivo_seleccionado)
     os.system("kitty +kitten icat --align left "+ruta_archivo)
 
 # Especifica la carpeta
-folder = "/home/pau/Documents/AnimatedSprites"  # Cambia esto a la ruta de tu carpeta
+folder = "../AnimatedSprites"  # Cambia esto a la ruta de tu carpeta
 randomPoke(folder)
