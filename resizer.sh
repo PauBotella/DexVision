@@ -1,6 +1,6 @@
 #!/bin/bash
 
-folder="/home/pau/Documents/AnimatedSprites"
+folder="/home/pau/proyects/DexVision/AnimatedSprites"
 
 # Loop through each .gif file in the folder
 for file in "$folder"/*.gif; do
