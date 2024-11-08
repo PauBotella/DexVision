@@ -9,7 +9,7 @@ def cli():
     parser.add_argument(
         '-s', '--Shiny',
         action='store_true',
-        help='Displays the pokemon in its shiny form'
+        help='Displays the pokemon in its shiny form. Only with -p flag'
     )
 
     parser.add_argument(

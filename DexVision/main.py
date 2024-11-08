@@ -6,7 +6,8 @@ def main():
     arguments = cli()
     try:
         #list()
-        randomPoke()
+        #random_pokemon()
+        search_pokemon("abomasnow-mega",False)
 
 
     except Exception as ex:
