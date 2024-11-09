@@ -1,15 +1,12 @@
 #!/bin/bash
 
-folder="/home/pau/proyects/DexVision/AnimatedSprites"
+folder="Sprites"
+width=250
 
-# Loop through each .gif file in the folder
 for file in "$folder"/*.gif; do
     if [[ -f "$file" ]]; then
         echo "Processing $file ..."
-        # Run gifsicle to resize the width to 250 pixels
-        gifsicle --resize-width 250 "$file" -o "$file"
+        gifsicle --resize-width $width "$file" -o "$file"
         echo "$file resized."
     fi
 done
-
-echo "Process completed."

@@ -3,7 +3,8 @@ import os
 
 RED = '\033[91m'
 RESET = "\033[0m"
-path="../Sprites/"
+home=os.path.expanduser('~')
+path=f"{home}/.dex_vision/Sprites/"
 command="kitty +kitten icat --align left "
 pokes = [f for f in os.listdir(path) if "shiny" not in f]
 shiny_pokes = [f for f in os.listdir(path) if "shiny" in f]
@@ -22,7 +23,8 @@ def random_pokemon(name):
     os.system(command+random_poke_path)
 
 def search_pokemon(sprite,is_shiny):
-    complete_path = path+sprite+".gif" if not is_shiny else path+sprite+"_shiny.gif"
+    sprite_path=path+sprite
+    complete_path = f"{sprite_path}.gif" if not is_shiny else f"{sprite_path}_shiny.gif"
 
     if not os.path.isfile(complete_path):
         print(RED+"Error: "+RESET+"Pokemon not found, try -l to search the pokemon that you want")
