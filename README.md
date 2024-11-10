@@ -17,3 +17,19 @@ For the next generations original sprites are from pokemon showdown
 ![flygon](./Assets/flygon.gif)
 ![lapras](./Assets/lapras.gif)
 
+## Usage
+```
+usage: DexVision [-h] [-s] [-n] [-l] [-r] [pokemon]
+
+Show pokemon animated sprites
+
+positional arguments:
+  pokemon       Display any Pokémon that you want
+
+options:
+  -h, --help    show this help message and exit
+  -s, --shiny   Displays the pokemon in its shiny form. Only with -p flag
+  -n, --name    Displays the name of selected pokemon. Only with -r flag
+  -l, --list    Displays a list of available pokemon
+  -r, --random  Displays a list of available pokemon
+```
