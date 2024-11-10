@@ -74,5 +74,5 @@ options:
   -s, --shiny   Displays the pokemon in its shiny form. Only with -p flag
   -n, --name    Displays the name of selected pokemon. Only with -r flag
   -l, --list    Displays a list of available pokemon
-  -r, --random  Displays a list of available pokemon
+  -r, --random  Displays a pokemon randomly
 ```
