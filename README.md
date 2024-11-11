@@ -64,17 +64,41 @@ Go to the proyect folder and:
 
 ## Usage
 ```
-usage: DexVision [-h] [-s] [-n] [-l] [-r] [pokemon]
+usage: DexVision [-h] [-s] [-n NAME] [-l] [-r]
 
 Show pokemon animated sprites
 
-positional arguments:
-  pokemon       Display any Pokémon that you want
-
 options:
-  -h, --help    show this help message and exit
-  -s, --shiny   Displays the pokemon in its shiny form. Only with -p flag
-  -n, --name    Displays the name of selected pokemon. Only with -r flag
-  -l, --list    Displays a list of available pokemon
-  -r, --random  Displays a pokemon randomly
+  -h, --help            show this help message and exit
+  -s, --shiny           Displays the pokemon in its shiny form. Only with -p flag
+  -n NAME, --name NAME  Select pokemon by name, for see the available pokemon use -l flag with
+                        grep to filter that you want
+  -l, --list            Displays a list of available pokemon
+  -r, --random          Displays a pokemon randomly
+```
+### Examples
+Display a specific pokemon
+```
+dex-vision -n yanmega
+```
+Display a specific pokemon shiny
+```
+dex-vision -n yanmega -s
+```
+Display a random pokemon (5% chance of shiny)
+```
+dex-vision -r
+```
+Display a list with all available pokemons
+```
+dex-vision -l
+```
+#### Filter the list
+Search pokemon that contains cha in the name
+```
+dex-vision -l | grep cha
+```
+Search pokemon in gigamax form
+```
+dex-vision -l | grep gmax
 ```
