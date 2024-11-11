@@ -45,7 +45,7 @@ Make sure that the folder `~/.local/bin` is in PATH.
 ```
 echo $PATH
 ```
-#### If not then:
+#### If not:
 #### In bash
 ```
 export PATH="$PATH:~/.local/bin"
