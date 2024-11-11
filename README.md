@@ -102,3 +102,5 @@ Search pokemon in gigamax form
 ```
 dex-vision -l | grep gmax
 ```
+## Extra
+If you want to change the size of the gifs, run the script `resizer.sh` and modify the `width` parameter.
