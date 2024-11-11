@@ -6,7 +6,8 @@ A script to print out animated sprites of pokemon to the terminal. Inspired by
 
 Gen 1 to 5 original sprites are from EBDX
 
-For the next generations original sprites are from pokemon showdown
+For the next generations original sprites are from pokemon Showdown
+Not all the sprites available in Pokemon Showdown are in this program because some of them appear bugged in the terminal.
 
 5% chance of shiny in random
 
