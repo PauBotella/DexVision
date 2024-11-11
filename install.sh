@@ -6,3 +6,4 @@ python3 -m PyInstaller --onefile main.py --name=dex-vision
 mkdir -p $install_dir
 mv dist/dex-vision $install_dir
 cd
+echo "Installation Completed"
