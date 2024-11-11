@@ -1,28 +1,25 @@
 from arguments import *
-from cli import cli
+from cli import *
 
 def main():
-
-    args = cli()
     try:
         #Errors
-        if args.pokemon != "none" and (args.list or args.random):
+        if args.name and (args.list or args.random):
             print(RED+"Error: "+RESET+"Too many arguments")
             return
         elif (args.random and args.list):
             print(RED+"Error: "+RESET+"Too many arguments")
             return
-        elif args.pokemon == "none" and not (args.list or args.random):
-            print(RED+"Error: "+RESET+"Add a pokemon or use -h to see the help")
 
         #actions
-        if args.pokemon != "none":
-            search_pokemon(args.pokemon,args.shiny)
+        if args.name:
+            search_pokemon(args.name,args.shiny)
         elif args.random:
-            random_pokemon(args.name)
+            random_pokemon()
         elif args.list:
             list_pokemon()
-
+        else:
+            parser.print_help()
     except Exception as ex:
         print(ex)
 
