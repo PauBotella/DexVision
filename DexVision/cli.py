@@ -26,7 +26,7 @@ def cli():
     parser.add_argument(
         '-r','--random',
         action='store_true',
-        help='Displays a pokemon randomly with a 5% chance of shiny'
+        help="Displays a pokemon randomly"
     )
     parser.add_argument(
         'pokemon',
