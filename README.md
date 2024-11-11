@@ -39,6 +39,7 @@ git clone https://github.com/PauBotella/DexVision.git
 ```
 ```
 cd DexVision
+chmod +x install.sh
 ./install.sh
 ```
 Make sure that the folder `~/.local/bin` is in PATH.
