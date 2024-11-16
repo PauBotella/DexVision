@@ -3,6 +3,7 @@
 A script to print out animated sprites of pokemon to the terminal. Inspired by
 [Pokemon Color Scripts](https://gitlab.com/phoneybadger/pokemon-colorscripts)
 
+Only Works in `kitty` terminal
 
 Gen 1 to 5 original sprites are from EBDX
 
@@ -25,7 +26,10 @@ Not all the sprites available in Pokemon Showdown are in this program because so
 ![lapras](./Assets/lapras.gif)
 
 ## Requeriments
-The program requires `python3`,`pip`,`pyinstaller`
+The program requires `kitty`,`python3`,`pip`,`pyinstaller`
+```
+sudo apt install kitty
+```
 ```
 sudo apt install python3-pip
 ```
