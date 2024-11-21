@@ -32,7 +32,7 @@ sudo apt install kitty
 sudo apt install python3-pip
 ```
 ```
-pip install -U pyinstaller
+pip install pyinstaller
 ```
 ## Installation
 
