@@ -3,14 +3,13 @@
 A script to print out animated sprites of pokemon to the terminal. Inspired by
 [Pokemon Color Scripts](https://gitlab.com/phoneybadger/pokemon-colorscripts)
 
+Only Works in `kitty` terminal
 
 Gen 1 to 5 original sprites are from EBDX
 
 For the next generations original sprites are from pokemon Showdown.
 
 Not all the sprites available in Pokemon Showdown are in this program because some of them appear bugged in the terminal.
-
-5% chance of shiny in random
 
 ## Visuals
 ![galarian zigzagoon](./Assets/r1.gif)
@@ -25,12 +24,15 @@ Not all the sprites available in Pokemon Showdown are in this program because so
 ![lapras](./Assets/lapras.gif)
 
 ## Requeriments
-The program requires `python3`,`pip`,`pyinstaller`
+The program requires `kitty`,`python3`,`pip`,`pyinstaller`
+```
+sudo apt install kitty
+```
 ```
 sudo apt install python3-pip
 ```
 ```
-pip install -U pyinstaller
+pip install pyinstaller
 ```
 ## Installation
 
@@ -102,5 +104,11 @@ Search pokemon in gigamax form
 ```
 dex-vision -l | grep gmax
 ```
+
+Search pokemon in megaevolution form
+```
+dex-vision -l | grep mega
+```
+
 ## Extra
 If you want to change the size of the gifs, run the script `resizer.sh` and modify the `width` parameter.
