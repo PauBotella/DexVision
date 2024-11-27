@@ -87,7 +87,7 @@ Display a specific pokemon shiny
 ```
 dex-vision -n yanmega -s
 ```
-Display a random pokemon (5% chance of shiny)
+Display a random pokemon (6% chance of shiny)
 ```
 dex-vision -r
 ```
